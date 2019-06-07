@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kompani-csssr</title>
+    <link href="./index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="anketa">
+        <div class="header">
+            <div class="header_top">
+                <img src="/image/logo.png">
+                <img src="/image/secret.png">
+            </div>
+            <div class="delo">
+                <img src="/image/delo.png">
+            </div>
+        </div>
+        <div class="fio">
+            <form>
+                <div>
+                    <label for="name">Полное ФИО</label>
+                    <input class="first-imput" type="text" name="name" id="name" required
+                        placeholder="Иванов Иван Иванович" autocomplete="off"><Br>
+                </div>
+                <div>
+                    <label for="year">Год рождения</label>
+                    <input class="second-imput" type="text" name="name" id="year" required placeholder="1990"
+                        autocomplete="off"> <Br>
+                </div>
+                <div>
+                    <label for="residence">Место жительства</label>
+                    <input class="third-imput" type="text" name="name" id="residence" required
+                        placeholder="г. Иваново, Россия" autocomplete="off"> <Br>
+                </div>
+                <div>
+                    <label for="skype">Скайп</label>
+                    <input class="fourth-imput" type="text" name="name" skype id="" required placeholder="ivanov"
+                        autocomplete="off"><Br>
+                </div>
+                <div>
+                    <label for="email"> Почта</label>
+                    <input class="fifth-imput" type="email" name="email" id="email" required
+                        placeholder="ivanov@gmail.com" autocomplete="off">
+                </div>
+            </form>
+        </div>
+        <div class="checkbox">
+            <form>
+                <h1>Расскажите о себе чекбоксами</h1>
+                <p>Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не
+                    означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете
+                    получать те задачи, с которыми гарантировано будете справляться.</p>
+                <div class="checkbox-input">
+                    <input type="checkbox" id="checkbox_1">
+                    <label for="checkbox_1">ЭМ/OOCSS</label>
+                    <input type="checkbox" id="checkbox_2">
+                    <label for="checkbox_2">Pug (Jade)</label>
+                    <input type="checkbox" id="checkbox_3">
+                    <label for="checkbox_3">Stylus/LESS/SASS</label>
+                    <input type="checkbox" id="checkbox_4">
+                    <label for="checkbox_4">Работаю с SVG</label>
+                    <input type="checkbox" id="checkbox_5">
+                    <label for="checkbox_5">Верстаю семантично</label>
+                    <input type="checkbox" id="checkbox_6">
+                    <label for="checkbox_6">Accessibility (A11Y)</label>
+                    <input type="checkbox" id="checkbox_7">
+                    <label for="checkbox_7">ES2015/ES2016</label>
+                    <input type="checkbox" id="checkbox_8">
+                    <label for="checkbox_8">Gulp/GRUNT</label>
+                    <input type="checkbox" id="checkbox_9">
+                    <label for="checkbox_9">Webpack</label>
+                    <input type="checkbox" id="checkbox_10">
+                    <label for="checkbox_10">Дружу с WebGL</label>
+                    <input type="checkbox" id="checkbox_11">
+                    <label for="checkbox_11">jQuery</label>
+                    <input type="checkbox" id="checkbox_12">
+                    <label for="checkbox_12">Знаю/изучаю Angular</label>
+                    <input type="checkbox" id="checkbox_13">
+                    <label for="checkbox_13">Знаю/изучаю React</label>
+                    <input type="checkbox" id="checkbox_14">
+                    <label for="checkbox_14">Знаю/изучаю Node.js</label>
+                    <input type="checkbox" id="checkbox_15">
+                    <label for="checkbox_15">Использую Git</label>
+                    <input type="checkbox" id="checkbox_16">
+                    <label for="checkbox_16">С глазомером всё ок</label>
+                    <input type="checkbox" id="checkbox_17">
+                    <label for="checkbox_17">Читаю <a href="http://blog.csssr.ru">blog.csssr.ru</a></label>
+                    <input type="checkbox" id="checkbox_18">
+                    <label for="checkbox_18">Я ленивый(-ая)</label>
+                    <input type="checkbox" id="checkbox_19">
+                    <label for="checkbox_19">У меня хороший &emsp;<Br>&nbsp;&emsp;английский</label>
+                </div>
+            </form>
+        </div>
+        <div class="diapozon">
+            <form>
+                <h1>Уровень владения JavaScript</h1>
+                <div class="wrp">
+                    <input type="range" min="0" max="1000" class="range">
+                </div>
+                <div class="diapozon-p">
+                    <p>Не владею</p>
+                    <p>Использую готовые решения</p>
+                    <p>Использую готовые решения<br>и умею их переделывать</p>
+                    <p>Пишу сложный JS с нуля</p>
+                </div>
+            </form>
+        </div>
+        <div class="mnogostroch">
+            <form>
+                <label>
+                    <h1>Расскажите о себе словами</h1>
+                    <p>Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в
+                        CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться
+                        автоматически.</p>
+                    <div class="conteiner">
+                        <textarea placeholder="Ну-ууу-уу..." placeholder="Ээээ..."></textarea>
+                        <div class="img-rec-1"><img src="/image/rectangle3.png" width="770" height="4"></div>
+                        <div class="img-rec-2"><img src="/image/rectangle3.png" width="770" height="4"></div>
+                        <div class="img-rec-3"><img src="/image/rectangle4.png" width="770" height="4"></div>
+                    </div>
+                </label>
+            </form>
+        </div>
+        <div class="radiobatton">
+            <form>
+                <h1>Какие у вас планы на будущее?</h1>
+                <p>Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</p>
+                <div class="radio-input">
+                    <input name="radio" type="radio" value="nedzen" id="radio_1">
+                    <label for="radio_1">Верстать</label>
+                    <input name="radio" type="radio" value="dzen" checked id="radio_2">
+                    <label for="radio_2">Прокачиваться в JS</label>
+                    <input name="radio" type="radio" value="pdzen" id="radio_3">
+                    <label for="radio_3">Менеджерство</label>
+                    <input name="radio" type="radio" value="rdzen" id="radio_4">
+                    <label for="radio_4">Другое</label>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <label for="date">Дата заполнения</label>
+            <input class="first-imput" type="text" name="date" id="date" required placeholder="01.01.2016">
+        </div>
+    </div>
+    <script>
+        $('textarea').autoResize();
+    </script>
+</body>
+
+</html>

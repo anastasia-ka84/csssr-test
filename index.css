@@ -1,0 +1,357 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #797979;
+    display: flex;
+    justify-content: center;
+}
+
+.anketa {
+    width: 1000px;
+    height: 1900px;
+    background: url(/image/fon.png) no-repeat;
+    padding: 48px 117px 73px 112px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+}
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.header_top img:nth-child(2) {
+    margin-left: 436px;
+}
+.delo {
+    margin-left: 258px;
+}
+
+
+
+
+
+
+.fio label,
+.footer label {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 22.43px;
+    font-weight: 700;
+    align-self: flex-end;
+}
+.fio input {
+    font-family: 'Courier New', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #231f20;
+    padding: 0 15px 0 15px;
+    margin-top: 5px;
+    margin-left: 15px;
+    background: transparent;
+    flex-grow: 1;
+}
+input[type="text"],
+input[type="email"] {
+    outline: none;
+    font-family: 'Courier New', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #231f20;
+    background: transparent;
+ }
+
+
+.fio div {
+    display: flex;
+    align-items: center;
+}
+.first-imput {
+    border-bottom: 4px solid;
+    border-image: url(/image/rectangle1.png);
+    border-image-slice: 0 0 5 0;
+}
+.second-imput {
+    border-bottom: 4px solid;
+    border-image: url(/image/rectangle2.png);
+    border-image-slice: 0 0 5 0;
+}
+.third-imput {
+    border-bottom: 4px solid;
+    border-image: url(/image/rectangle3.png);
+    border-image-slice: 0 0 5 0;
+}
+.fourth-imput {
+    border-bottom: 4px solid;
+    border-image: url(/image/rectangle4.png);
+    border-image-slice: 0 0 5 0;
+}
+.fifth-imput {
+    border-bottom: 4px solid;
+    border-image: url(/image/rectangle5.png);
+    border-image-slice: 0 0 5 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.checkbox h1,
+.mnogostroch h1,
+.radiobatton h1,
+.diapozon h1 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2f1b15;
+}
+
+.checkbox p,
+.radiobatton p,
+.mnogostroch p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #3d3d3d;
+}
+
+.checkbox input {
+    display: none;
+}
+
+.checkbox label {
+    
+    position: relative;
+    cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 6px;
+}
+.checkbox label a {
+    color: #1f5f97;
+}
+.checkbox label::before {
+    content: "";
+    height: 18px;
+    width: 19px;
+    position: relative;
+    display: inline-block;
+    background: url(/image/kvadrat.png) no-repeat;
+    margin-right: 8px;
+    left: 0px;
+    top: 2px; 
+}
+.checkbox input:checked + label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 21px;
+    height: 27px;
+    background: url(/image/galka.png) no-repeat;
+    left: 3px;
+    top: -5px; 
+}
+.checkbox-input {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.diapozon-p {
+    display: flex;
+    justify-content: space-between;
+    border-top: 26px solid;
+    border-image: url(/image/rectangle1-2.png);
+    border-image-slice: 26 0 0 0;
+    box-sizing: border-box;
+}
+.diapozon-p p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #2f1b15;
+    margin: 0;
+    box-sizing: border-box;
+}
+.diapozon-p p:nth-child(1) {
+    margin-right: 83px;
+}
+.diapozon-p p:nth-child(2) {
+    margin-right: 59px;
+}
+.diapozon-p p:nth-child(3) {
+    margin-right: 92px;
+}
+
+ input[type=range] {
+  -webkit-appearance: none;
+  background: transparent;
+  width: 783px;
+  margin-left: -6px;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 14px;
+  width: 16px;
+  background: url(/image/treygol.png) no-repeat;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img-rec-1 {
+    display: flex;
+    margin-top: 66px;
+}
+.img-rec-2 {
+    display: flex;
+    margin-top: 54px;
+}
+.img-rec-3 {
+    display: flex;
+    margin-top: 57px;
+}
+
+.conteiner {
+    position: relative;
+}
+.conteiner textarea {
+    width: 770px;
+    height: 300px;
+    resize: none;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+    font-family: 'Courier New', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #231f20;
+    position: absolute;
+    background: transparent;
+    top: -46px;
+    line-height: 60px;
+    text-align: justify;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.radio-input input {
+    display: none;
+}
+.radio-input label  {
+    position: relative;
+    cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 19px;
+}
+.radio-input label::before {
+    content: "";
+    height: 28px;
+    width: 28px;
+    position: relative;
+    display: inline-block;
+    background: url(/image/cryg.png);    
+    left: -1px;
+    top: 6px;
+    margin-right: 5px;
+}
+.radio-input input:checked + label::after {    
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: url(/image/tochka.png) no-repeat;
+    left: 7px;
+    top: 6px; 
+}
+
+
+
+.footer {
+    width: 394px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 80px;
+}
+.footer input {
+    width: 180px;
+    font-family: 'Courier New', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #231f20;
+    padding: 0 12px 0 12px;
+    margin-left: 15px;
+    background: transparent;
+}
+.first-imput {
+    border-bottom: 4px solid;
+    border-image: url(/image/rectangle1-1.png);
+    border-image-slice: 0 0 5 0;
+}
