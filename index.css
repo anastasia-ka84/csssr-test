@@ -9,7 +9,7 @@ body {
 .anketa {
     width: 1000px;
     height: 1900px;
-    background: url(/image/fon.png) no-repeat;
+    background: url(./image/fon.png) no-repeat;
     padding: 48px 117px 73px 112px;
     box-sizing: border-box;
     display: flex;
@@ -73,27 +73,27 @@ input[type="email"] {
 }
 .first-imput {
     border-bottom: 4px solid;
-    border-image: url(/image/rectangle1.png);
+    border-image: url(./image/rectangle1.png);
     border-image-slice: 0 0 5 0;
 }
 .second-imput {
     border-bottom: 4px solid;
-    border-image: url(/image/rectangle2.png);
+    border-image: url(./image/rectangle2.png);
     border-image-slice: 0 0 5 0;
 }
 .third-imput {
     border-bottom: 4px solid;
-    border-image: url(/image/rectangle3.png);
+    border-image: url(./image/rectangle3.png);
     border-image-slice: 0 0 5 0;
 }
 .fourth-imput {
     border-bottom: 4px solid;
-    border-image: url(/image/rectangle4.png);
+    border-image: url(./image/rectangle4.png);
     border-image-slice: 0 0 5 0;
 }
 .fifth-imput {
     border-bottom: 4px solid;
-    border-image: url(/image/rectangle5.png);
+    border-image: url(./image/rectangle5.png);
     border-image-slice: 0 0 5 0;
 }
 
@@ -152,7 +152,7 @@ input[type="email"] {
     width: 19px;
     position: relative;
     display: inline-block;
-    background: url(/image/kvadrat.png) no-repeat;
+    background: url(./image/kvadrat.png) no-repeat;
     margin-right: 8px;
     left: 0px;
     top: 2px; 
@@ -163,7 +163,7 @@ input[type="email"] {
     position: absolute;
     width: 21px;
     height: 27px;
-    background: url(/image/galka.png) no-repeat;
+    background: url(./image/galka.png) no-repeat;
     left: 3px;
     top: -5px; 
 }
@@ -195,7 +195,7 @@ input[type="email"] {
     display: flex;
     justify-content: space-between;
     border-top: 26px solid;
-    border-image: url(/image/rectangle1-2.png);
+    border-image: url(./image/rectangle1-2.png);
     border-image-slice: 26 0 0 0;
     box-sizing: border-box;
 }
@@ -229,7 +229,7 @@ input[type=range]:focus {
 input[type=range]::-webkit-slider-thumb {
   height: 14px;
   width: 16px;
-  background: url(/image/treygol.png) no-repeat;
+  background: url(./image/treygol.png) no-repeat;
   cursor: pointer;
   -webkit-appearance: none;
 }
@@ -266,7 +266,7 @@ input[type=range]::-webkit-slider-thumb {
     /* top: -46px; */
     line-height: 60px;
     text-align: justify;
-    background-image: url(/image/rectangle_textarea2.png);
+    background-image: url(./image/rectangle_textarea2.png);
     background-repeat: repeat-y;
     /* background-position: left bottom; */
     
@@ -305,7 +305,7 @@ input[type=range]::-webkit-slider-thumb {
     width: 28px;
     position: relative;
     display: inline-block;
-    background: url(/image/cryg.png);    
+    background: url(./image/cryg.png);    
     left: -1px;
     top: 6px;
     margin-right: 5px;
@@ -316,7 +316,7 @@ input[type=range]::-webkit-slider-thumb {
     position: absolute;
     width: 12px;
     height: 12px;
-    background: url(/image/tochka.png) no-repeat;
+    background: url(./image/tochka.png) no-repeat;
     left: 7px;
     top: 6px; 
 }
@@ -341,6 +341,6 @@ input[type=range]::-webkit-slider-thumb {
 }
 .first-imput {
     border-bottom: 4px solid;
-    border-image: url(/image/rectangle1-1.png);
+    border-image: url(./image/rectangle1-1.png);
     border-image-slice: 0 0 5 0;
 }
