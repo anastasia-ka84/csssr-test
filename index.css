@@ -246,40 +246,29 @@ input[type=range]::-webkit-slider-thumb {
 
 
 
-.img-rec-1 {
-    display: flex;
-    margin-top: 66px;
-}
-.img-rec-2 {
-    display: flex;
-    margin-top: 54px;
-}
-.img-rec-3 {
-    display: flex;
-    margin-top: 57px;
-}
 
-.conteiner {
-    position: relative;
-}
 .conteiner textarea {
     width: 770px;
-    height: 300px;
-    resize: none;
-    outline: none;
-    border: none;
-    overflow: hidden;
-    box-sizing: border-box;
+    height: 183px;
+    display: block;
+    resize: none; /* не позволяет пользователю менять размеры */
+    outline: none; /* убирает голубую рамочку которая появляется когда пользователь заполняяет форму */
+    border: none;  /* убирает стандартную рамку */
+    overflow: hidden; /* убирает полосу прокрутки */
+    /* box-sizing: border-box; */
     
     font-family: 'Courier New', sans-serif;
     font-size: 30px;
     font-weight: 400;
     color: #231f20;
-    position: absolute;
+    /* position: absolute; */
     background: transparent;
-    top: -46px;
+    /* top: -46px; */
     line-height: 60px;
     text-align: justify;
+    background-image: url(/image/rectangle_textarea2.png);
+    background-repeat: repeat-y;
+    /* background-position: left bottom; */
     
 }
 
