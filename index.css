@@ -1,152 +1,133 @@
 body {
-    width: 100%;
-    height: 100%;
-    background-color: #797979;
-    display: flex;
-    justify-content: center;
+    background-color: #797979; 
 }
-
-.anketa {
+.questionnaire {
     width: 1000px;
-    height: 1900px;
-    background: url(./image/fon.png) no-repeat;
-    padding: 48px 117px 73px 112px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin: auto;
+    background: url(./image/fon.png);
 }
 .header {
     display: flex;
     flex-direction: column;
 }
-.header_top {
+ .header__logo {
+    line-height: 0;
+    margin: 56px 54px 6px 104px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 7px;
+    align-items: center;  
 }
-.header_top img:nth-child(2) {
-    margin-left: 436px;
+.header__logo_left {
+    margin-top: 22px;
+    margin-bottom: 54px;
 }
-.delo {
-    margin-left: 258px;
+.header__title {
+    margin-left: 373px;
+    margin-right: 412px;
+    margin-bottom: 52px;
+    line-height: 0;
 }
-
-
-
-
-
-
-.fio label,
-.footer label {
+.info__form {
+    margin: 0px 116px 70px 112px;
+}
+.info__form_flex {
+    display: flex;
+}
+.info__form_text {
     font-family: 'PT Sans', sans-serif;
     font-size: 22.43px;
     font-weight: 700;
     align-self: flex-end;
 }
-.fio input {
+.info__form_imput {
     font-family: 'Courier New', sans-serif;
     font-size: 30px;
     font-weight: 400;
     color: #231f20;
-    padding: 0 15px 0 15px;
-    margin-top: 5px;
-    margin-left: 15px;
-    background: transparent;
+    box-sizing: border-box;
     flex-grow: 1;
-}
-input[type="text"],
-input[type="email"] {
-    outline: none;
-    font-family: 'Courier New', sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    color: #231f20;
     background: transparent;
- }
-
-
-.fio div {
-    display: flex;
-    align-items: center;
+    outline: none;
 }
 .first-imput {
+    text-transform: capitalize;
+    padding: 0px 15px 5px 15px;
+    margin-left: 14px;
     border-bottom: 4px solid;
     border-image: url(./image/rectangle1.png);
     border-image-slice: 0 0 5 0;
 }
 .second-imput {
+    padding: 15px 15px 6px 15px;
+    margin-left: 11px;
     border-bottom: 4px solid;
     border-image: url(./image/rectangle2.png);
     border-image-slice: 0 0 5 0;
 }
 .third-imput {
+    padding: 16px 15px 5px 12px;
+    margin-left: 15px;
     border-bottom: 4px solid;
     border-image: url(./image/rectangle3.png);
     border-image-slice: 0 0 5 0;
 }
 .fourth-imput {
+    padding: 20px 15px 4px 13px;
+    margin-left: 13px;
     border-bottom: 4px solid;
     border-image: url(./image/rectangle4.png);
     border-image-slice: 0 0 5 0;
 }
 .fifth-imput {
+    padding: 19px 15px 3px 14px;
+    margin-left: 13px;
     border-bottom: 4px solid;
     border-image: url(./image/rectangle5.png);
     border-image-slice: 0 0 5 0;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.checkbox h1,
-.mnogostroch h1,
-.radiobatton h1,
-.diapozon h1 {
+.checkbox__form {
+    margin: 0px 114px 63px 112px;
+}
+.checkbox__form_h {
     font-family: 'PT Sans', sans-serif;
     font-size: 24px;
     font-weight: 700;
     color: #2f1b15;
+    margin-top: -5px;
 }
-
-.checkbox p,
-.radiobatton p,
-.mnogostroch p {
+.checkbox__form_p {
     font-family: 'PT Sans', sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: #3d3d3d;
+    line-height: 23px;
+    margin-top: -6px;
 }
-
-.checkbox input {
+.checkbox__form_input {
+    height: 245px;
+    margin-top: 17px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+}
+.checkbox__form_input input {
     display: none;
 }
-
-.checkbox label {
-    
+.checkbox__form_input label {
     position: relative;
     cursor: pointer;
     font-family: 'PT Sans', sans-serif;
     font-size: 21px;
     font-weight: 700;
-    margin-top: 6px;
+    margin-top: 11px;
+    margin-right: 41px;
 }
-.checkbox label a {
+.checkbox__form_input label a {
     color: #1f5f97;
 }
-.checkbox label::before {
+.checkbox__form_input label::before {
     content: "";
     height: 18px;
     width: 19px;
@@ -157,7 +138,7 @@ input[type="email"] {
     left: 0px;
     top: 2px; 
 }
-.checkbox input:checked + label::after {
+.checkbox__form_input input:checked + label::after {
     content: "";
     display: block;
     position: absolute;
@@ -167,31 +148,11 @@ input[type="email"] {
     left: 3px;
     top: -5px; 
 }
-.checkbox-input {
-    height: 240px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; 
+
+.level__form {
+    margin: 0px 117px 18px 112px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.diapozon-p {
+.level__form_range {
     display: flex;
     justify-content: space-between;
     border-top: 26px solid;
@@ -199,95 +160,106 @@ input[type="email"] {
     border-image-slice: 26 0 0 0;
     box-sizing: border-box;
 }
-.diapozon-p p {
+.level__form_h {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2f1b15;
+    margin-top: -5px; 
+    margin-bottom: 23px;
+}
+.level__form_p {
     font-family: 'PT Sans', sans-serif;
     font-size: 13px;
     font-weight: 700;
     color: #2f1b15;
-    margin: 0;
+    line-height: 19px;
     box-sizing: border-box;
 }
-.diapozon-p p:nth-child(1) {
-    margin-right: 83px;
+.range_p-first {
+    margin-top: 3px;
+    margin-right: 84px;
 }
-.diapozon-p p:nth-child(2) {
+.range_p-second {
+    margin-top: 3px;
     margin-right: 59px;
 }
-.diapozon-p p:nth-child(3) {
-    margin-right: 92px;
+.range_p-third {
+    margin-top: 3px;
+    margin-right: 93px;
 }
-
- input[type=range] {
-  -webkit-appearance: none;
-  background: transparent;
-  width: 783px;
-  margin-left: -6px;
+.range_p-fourth {
+    margin-top: 10px;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+    width: 780px;
+    margin-left: -6px;
 }
 input[type=range]:focus {
-  outline: none;
+    outline: none;
 }
 input[type=range]::-webkit-slider-thumb {
-  height: 14px;
-  width: 16px;
-  background: url(./image/treygol.png) no-repeat;
-  cursor: pointer;
-  -webkit-appearance: none;
+    height: 14px;
+    width: 16px;
+    background: url(./image/treygol.png) no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.conteiner textarea {
-    width: 770px;
-    height: 183px;
+.string__form {
+    margin: 0 118px 0 114px;
+}
+.string__form_h {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2f1b15;
+}
+.string__form_p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #3d3d3d;
+    line-height: 21px;
+    margin-top: -1px;
+}
+.string__form_textarea textarea {
+    width: 767px;
+    margin-top: 24px;
     display: block;
-    resize: none; /* не позволяет пользователю менять размеры */
-    outline: none; /* убирает голубую рамочку которая появляется когда пользователь заполняяет форму */
-    border: none;  /* убирает стандартную рамку */
-    overflow: hidden; /* убирает полосу прокрутки */
-    /* box-sizing: border-box; */
-    
+    resize: none;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    box-sizing: border-box;
     font-family: 'Courier New', sans-serif;
     font-size: 30px;
     font-weight: 400;
     color: #231f20;
-    /* position: absolute; */
-    background: transparent;
-    /* top: -46px; */
     line-height: 60px;
-    text-align: justify;
-    background-image: url(./image/rectangle_textarea2.png);
-    background-repeat: repeat-y;
-    /* background-position: left bottom; */
-    
+    background: transparent;
+    background-image: url(./image/rectangle_textarea3-1.png);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.radiobatton__form {
+    margin: 0 118px 80px 111px;
+}
+.radiobatton__form_h {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2f1b15;
+}
+.radiobatton__form_p {
+    margin-top: -5px;
+    margin-bottom: 11px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #3d3d3d;
+}
 .radio-input input {
     display: none;
 }
@@ -297,7 +269,7 @@ input[type=range]::-webkit-slider-thumb {
     font-family: 'PT Sans', sans-serif;
     font-size: 20px;
     font-weight: 700;
-    margin-right: 19px;
+    margin-right: 17px;
 }
 .radio-input label::before {
     content: "";
@@ -321,25 +293,28 @@ input[type=range]::-webkit-slider-thumb {
     top: 6px; 
 }
 
-
-
 .footer {
-    width: 394px;
+    padding-bottom: 97px;
+    margin-left: 111px;
+    width: 396px;
     display: flex;
     align-items: flex-end;
-    margin-top: 80px;
 }
-.footer input {
-    width: 180px;
+.footer__form_text {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 22.43px;
+    font-weight: 700;
+    align-self: flex-end;
+}
+.footer__form_imput {
+    width: 183px;
     font-family: 'Courier New', sans-serif;
     font-size: 30px;
     font-weight: 400;
     color: #231f20;
-    padding: 0 12px 0 12px;
+    padding: 0px 12px 4px 11px;
     margin-left: 15px;
     background: transparent;
-}
-.first-imput {
     border-bottom: 4px solid;
     border-image: url(./image/rectangle1-1.png);
     border-image-slice: 0 0 5 0;

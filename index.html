@@ -1,139 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
     <title>Kompani-csssr</title>
     <link href="./normalize.css" rel="stylesheet">
     <link href="./index.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="http://www.xiper.net/examples/js-plugins/forms/autoresize/js/autoresize.jquery.js"></script>
+    <link rel="icon" type="image/png" href="https://csssr.com/_next/static/icons/favicon-21b739d4.ico"
+        class="next-head">
+    <meta charset="utf-8">
 </head>
 
 <body>
-    <div class="anketa">
+
+    <div class="questionnaire">
         <div class="header">
-            <div class="header_top">
-                <img src="./image/logo.png">
-                <img src="./image/secret.png">
+            <div class="header__logo">
+                <img class="header__logo_left" src="./image/logo.png" alt="logo">
+                <img class="header__logo_stamp" src="./image/stamp.png" alt="stamp">
             </div>
-            <div class="delo">
-                <img src="./image/delo.png">
+            <div class="header__title">
+                <img src="./image/title.png" width="214" height="109">
             </div>
         </div>
-        <div class="fio">
-            <form>
-                <div>
-                    <label for="name">Полное ФИО</label>
-                    <input class="first-imput" type="text" name="csssr-name" id="name" required
+
+        <div class="info">
+            <form class="info__form">
+                <div class="info__form_flex">
+                    <label class="info__form_text" for="name">Полное ФИО</label>
+                    <input class="info__form_imput first-imput" type="text" name="csssr-name" id="name" required
                         placeholder="Иванов Иван Иванович" autocomplete="off"><Br>
                 </div>
-                <div>
-                    <label for="year">Год рождения</label>
-                    <input class="second-imput" type="text" name="csssr-name" id="year" required placeholder="1990"
-                        autocomplete="off"> <Br>
+                <div class="info__form_flex">
+                    <label class="info__form_text" for="year">Год рождения</label>
+                    <input class="info__form_imput second-imput" type="text" name="csssr-name" id="year" required
+                        placeholder="1990" autocomplete="off"> <Br>
                 </div>
-                <div>
-                    <label for="residence">Место жительства</label>
-                    <input class="third-imput" type="text" name="csssr-name" id="residence" required
+                <div class="info__form_flex">
+                    <label class="info__form_text" for="residence">Место жительства</label>
+                    <input class="info__form_imput third-imput" type="text" name="csssr-name" id="residence" required
                         placeholder="г. Иваново, Россия" autocomplete="off"> <Br>
                 </div>
-                <div>
-                    <label for="skype">Скайп</label>
-                    <input class="fourth-imput" type="text" name="csssr-skype-name" id="skype" required placeholder="ivanov"
-                        autocomplete="off"><Br>
+                <div class="info__form_flex">
+                    <label class="info__form_text" for="skype">Скайп</label>
+                    <input class="info__form_imput fourth-imput" type="text" name="csssr-skype-name" id="skype" required
+                        placeholder="ivanov" autocomplete="off"><Br>
                 </div>
-                <div>
-                    <label for="email"> Почта</label>
-                    <input class="fifth-imput" type="csssr-email" name="email-name" id="email" required
+                <div class="info__form_flex">
+                    <label class="info__form_text" for="email"> Почта</label>
+                    <input class="info__form_imput fifth-imput" type="csssr-email" name="email-name" id="email" required
                         placeholder="ivanov@gmail.com" autocomplete="off">
                 </div>
             </form>
         </div>
+
         <div class="checkbox">
-            <form>
-                <h1>Расскажите о себе чекбоксами</h1>
-                <p>Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не
+            <form class="checkbox__form">
+                <h1 class="checkbox__form_h">Расскажите о себе чекбоксами</h1>
+                <p class="checkbox__form_p">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати,
+                    отсутствие опыта не
                     означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете
                     получать те задачи, с которыми гарантировано будете справляться.</p>
-                <div class="checkbox-input">
-                    <input type="checkbox" id="checkbox_1">
+                <div class="checkbox__form_input">
+                    <input type="checkbox" id="checkbox_1" checked>
                     <label for="checkbox_1">ЭМ/OOCSS</label>
-                    <input type="checkbox" id="checkbox_2">
+
+                    <input type="checkbox" id="checkbox_2" checked>
                     <label for="checkbox_2">Pug (Jade)</label>
-                    <input type="checkbox" id="checkbox_3">
+
+                    <input type="checkbox" id="checkbox_3" checked>
                     <label for="checkbox_3">Stylus/LESS/SASS</label>
+
                     <input type="checkbox" id="checkbox_4">
                     <label for="checkbox_4">Работаю с SVG</label>
-                    <input type="checkbox" id="checkbox_5" checked>
+
+                    <input type="checkbox" id="checkbox_5">
                     <label for="checkbox_5">Верстаю семантично</label>
+
                     <input type="checkbox" id="checkbox_6">
                     <label for="checkbox_6">Accessibility (A11Y)</label>
+
                     <input type="checkbox" id="checkbox_7">
                     <label for="checkbox_7">ES2015/ES2016</label>
+
                     <input type="checkbox" id="checkbox_8">
                     <label for="checkbox_8">Gulp/GRUNT</label>
+
                     <input type="checkbox" id="checkbox_9">
                     <label for="checkbox_9">Webpack</label>
+
                     <input type="checkbox" id="checkbox_10">
                     <label for="checkbox_10">Дружу с WebGL</label>
+
                     <input type="checkbox" id="checkbox_11">
                     <label for="checkbox_11">jQuery</label>
+
                     <input type="checkbox" id="checkbox_12">
                     <label for="checkbox_12">Знаю/изучаю Angular</label>
-                    <input type="checkbox" id="checkbox_13" checked>
+
+                    <input type="checkbox" id="checkbox_13">
                     <label for="checkbox_13">Знаю/изучаю React</label>
+
                     <input type="checkbox" id="checkbox_14">
                     <label for="checkbox_14">Знаю/изучаю Node.js</label>
-                    <input type="checkbox" id="checkbox_15" checked>
+
+                    <input type="checkbox" id="checkbox_15">
                     <label for="checkbox_15">Использую Git</label>
-                    <input type="checkbox" id="checkbox_16" checked>
+
+                    <input type="checkbox" id="checkbox_16">
                     <label for="checkbox_16">С глазомером всё ок</label>
+
                     <input type="checkbox" id="checkbox_17">
-                    <label for="checkbox_17">Читаю <a href="http://blog.csssr.ru">blog.csssr.ru</a></label>
+                    <label for="checkbox_17">Читаю <a href="http://blog.csssr.ru"
+                            target="_blank">blog.csssr.ru</a></label>
+
                     <input type="checkbox" id="checkbox_18">
                     <label for="checkbox_18">Я ленивый(-ая)</label>
+
                     <input type="checkbox" id="checkbox_19">
                     <label for="checkbox_19">У меня хороший &emsp;<Br>&nbsp;&emsp;английский</label>
                 </div>
             </form>
         </div>
-        <div class="diapozon">
-            <form>
-                <h1>Уровень владения JavaScript</h1>
-                <div class="wrp">
-                    <input type="range" min="0" max="1000" value="194" class="range">
+
+        <div class="level">
+            <form class="level__form">
+                <h1 class="level__form_h">Уровень владения JavaScript</h1>
+                <div class="level__form_slider">
+                    <input type="range" min="0" max="1000" value="195" class="range">
                 </div>
-                <div class="diapozon-p">
-                    <p>Не владею</p>
-                    <p>Использую готовые решения</p>
-                    <p>Использую готовые решения<br>и умею их переделывать</p>
-                    <p>Пишу сложный JS с нуля</p>
+                <div class="level__form_range">
+                    <p class="level__form_p range_p-first">Не владею</p>
+                    <p class="level__form_p range_p-second">Использую готовые решения</p>
+                    <p class="level__form_p range_p-third">Использую готовые решения<br>и умею их переделывать</p>
+                    <p class="level__form_p range_p-fourth">Пишу сложный JS с нуля</p>
                 </div>
             </form>
         </div>
-        <div class="mnogostroch">
-            <form>
-                <label>
-                    <h1>Расскажите о себе словами</h1>
-                    <p>Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в
-                        CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться
-                        автоматически.</p>
-                    <div class="conteiner">
-                        <textarea placeholder="Ну-ууу-уу..." placeholder="Ээээ..."></textarea>
-                        <!-- <div class="img-rec-1"><img src="/image/rectangle3.png" width="770" height="4"></div>
-                        <div class="img-rec-2"><img src="/image/rectangle3.png" width="770" height="4"></div>
-                        <div class="img-rec-3"><img src="/image/rectangle4.png" width="770" height="4"></div> -->
-                    </div>
-                </label>
+
+        <div class="string mnogostroch">
+            <form class="string__form">
+                <h1 class="string__form_h">Расскажите о себе словами</h1>
+                <p class="string__form_p">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете
+                    от работы в CSSSR.
+                    Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
+                </p>
+                <div class="string__form_textarea">
+                    <textarea id="test"></textarea>
+                </div>
             </form>
         </div>
+
         <div class="radiobatton">
-            <form>
-                <h1>Какие у вас планы на будущее?</h1>
-                <p>Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</p>
+            <form class="radiobatton__form">
+                <h1 class="radiobatton__form_h">Какие у вас планы на будущее?</h1>
+                <p class="radiobatton__form_p">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы
+                    поменяются.</p>
                 <div class="radio-input">
-                    <input name="radio" type="radio" value="nedzen" id="radio_1">
+                    <input name="radio" type="radio" value="nedzen" checked id="radio_1">
                     <label for="radio_1">Верстать</label>
-                    <input name="radio" type="radio" value="dzen" checked id="radio_2">
+                    <input name="radio" type="radio" value="dzen" id="radio_2">
                     <label for="radio_2">Прокачиваться в JS</label>
                     <input name="radio" type="radio" value="pdzen" id="radio_3">
                     <label for="radio_3">Менеджерство</label>
@@ -142,13 +169,44 @@
                 </div>
             </form>
         </div>
+
         <div class="footer">
-            <label for="date">Дата заполнения</label>
-            <input class="first-imput" type="text" name="date-name" id="date" required placeholder="01.01.2016">
+            <label class="footer__form_text" for="date">Дата заполнения</label>
+            <input class="footer__form_imput" type="text" name="date-name" id="date" required placeholder="01.01.2016">
         </div>
     </div>
+
     <script>
-        $('textarea').autoResize();
+        function getTextareaNumberOfLines(textarea) {
+            var previous_height = textarea.style.height
+            textarea.style.height = 0
+            var lines = parseInt(textarea.scrollHeight / parseInt(getComputedStyle(textarea).lineHeight))
+            textarea.style.height = previous_height
+            return lines
+        }
+
+        function capitalize(phrase) {
+            var tokens = phrase.split('. ').map(function(word) {
+                return word.substr(0, 1).toUpperCase() + word.substr(1);
+            });
+            return tokens.join('. ');
+        }
+
+        function onKeyUp() {
+            var capitalizedPhrase = capitalize($('#test').val());
+            $('#test').val(capitalizedPhrase);
+            console.log(capitalizedPhrase)
+            var lines = getTextareaNumberOfLines($('#test')[0]);
+            lines = Math.max(lines, 3)
+            $('#test').height(lines * 60 + 46)
+        }
+
+        $('#test').on('keyup', onKeyUp)
+
+        var placeholder = 'Ну-ууу-уу... \nЭэээ...';
+        $('#test').attr('placeholder', placeholder);
+
+        onKeyUp()
     </script>
 </body>
 
